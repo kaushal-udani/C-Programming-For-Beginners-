@@ -1,0 +1,87 @@
+/* C-Programming For Beginners Task 1 */ 
+/* Printing "Hello World" Using Different Mathods */ 
+
+*************************************************************
+*                       /* Mathod 1 */                      *
+*                /*USING PRINTF STATEMENT*/                 *
+*************************************************************
+  #include<stdio.h>
+  int main()
+    {
+      printf("Hello World");
+	    return 0;
+    }
+*************************************************************
+*                       /* Mathod 2 */                      *
+*                /*USING IF STATEMENT*/                     *
+*************************************************************
+  #include<stdio.h> 
+  int main()
+    {
+	    if(printf("Hello World"))
+	    {;}
+	
+	    return 0;
+    }
+*************************************************************
+*                       /* Mathod 3 */                       *
+*                /*USING LOOP STATEMENT*/                    *
+*************************************************************  
+  #include<stdio.h>
+  int main()
+    {
+	    while(!printf("Hello World"))
+	    {;}
+	
+	    return 0;
+    }
+*************************************************************
+*                       /* Mathod 4 */                       *
+*                /*USING SWITCH STATEMENT*/                  *
+*************************************************************   
+  #include<stdio.h>
+  int main()
+    {
+	    switch(printf("Hello World"))
+	    {
+	    }
+	
+	    return 0;
+    }
+*************************************************************
+*                       /* Mathod 4 */                       *
+*                /*USING MACRO DEFINATION*/                  *
+*************************************************************   
+  #include<stdio.h>
+
+  #define a printf("Hello World")
+
+  int main()
+    {
+        if(a){;}
+	      return 0;
+    }
+*************************************************************
+*                       /* Mathod 5 */                       *
+*                /*USING C-INTERRUPTS*/                      *
+************************************************************* 
+  #include<dos.h>
+ 
+   int main() 
+   {
+      char *message = "Hello World$";
+ 
+      _AH = 9;
+      _DX = (int) message;
+      geninterrupt(0x21);
+      return 0;
+}
+
+   
+    
+    
+    
+    
+    
+    
+    
