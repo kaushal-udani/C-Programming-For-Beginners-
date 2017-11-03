@@ -61,21 +61,6 @@
         if(a){;}
 	      return 0;
     }
-*************************************************************
-*                       /* Mathod 5 */                       *
-*                /*USING C-INTERRUPTS*/                      *
-************************************************************* 
-  #include<dos.h>
- 
-   int main() 
-   {
-      char *message = "Hello World$";
- 
-      _AH = 9;
-      _DX = (int) message;
-      geninterrupt(0x21);
-      return 0;
-}
 
    
     
